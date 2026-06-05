@@ -10,5 +10,10 @@ namespace Soenneker.Intercom.OpenApiClientUtil.Abstract;
 /// </summary>
 public interface IIntercomOpenApiClientUtil: IDisposable, IAsyncDisposable
 {
+    /// <summary>
+    /// Gets the value.
+    /// </summary>
+    /// <param name="cancellationToken">The cancellation token.</param>
+    /// <returns>A task containing the result of the operation.</returns>
     ValueTask<IntercomOpenApiClient> Get(CancellationToken cancellationToken = default);
 }
