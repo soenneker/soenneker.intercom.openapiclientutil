@@ -6,7 +6,7 @@ using Soenneker.Intercom.OpenApiClientUtil.Abstract;
 namespace Soenneker.Intercom.OpenApiClientUtil.Registrars;
 
 /// <summary>
-/// Registers the OpenAPI client utility for dependency injection.
+/// Registers the lazily created Intercom generated-client provider.
 /// </summary>
 public static class IntercomOpenApiClientUtilRegistrar
 {

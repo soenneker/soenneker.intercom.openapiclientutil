@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 namespace Soenneker.Intercom.OpenApiClientUtil.Abstract;
 
 /// <summary>
-/// Exposes a cached OpenAPI client instance.
+/// Provides a lazily created Intercom generated client over the shared authenticated transport.
 /// </summary>
 public interface IIntercomOpenApiClientUtil: IDisposable, IAsyncDisposable
 {
     /// <summary>
-    /// Gets the value.
+    /// Gets the Intercom generated client.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A task containing the result of the operation.</returns>
+    /// <returns>A task containing the configured client.</returns>
     ValueTask<IntercomOpenApiClient> Get(CancellationToken cancellationToken = default);
 }
