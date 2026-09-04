@@ -11,6 +11,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Intercom.OpenApiClientUtil;
 
+/// <inheritdoc cref="IIntercomOpenApiClientUtil" />
 public sealed class IntercomOpenApiClientUtil : IIntercomOpenApiClientUtil
 {
     private readonly AsyncSingleton<IntercomOpenApiClient> _client;
