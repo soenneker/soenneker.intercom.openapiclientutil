@@ -45,6 +45,6 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Intercom.HttpClients" Version="11.0.168" />
-        <PackageReference Include="Soenneker.Intercom.OpenApiClient" Version="11.0.144" />
+        <PackageReference Include="Soenneker.Intercom.OpenApiClient" Version="11.0.145" />
     </ItemGroup>
 </Project>
